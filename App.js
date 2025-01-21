@@ -79,12 +79,6 @@ export default function App() {
   return (
     <View style={[styles.container, styles.darkMode]}>
       <Text style={styles.historyText}>History:</Text>
-      <FlatList
-        data={history}
-        renderItem={({ item }) => <Text style={styles.historyItem}>{item}</Text>}
-        keyExtractor={(item, index) => index.toString()}
-        style={styles.historyList}
-      />
 
       <View style={styles.screen}>
         <TextInput
